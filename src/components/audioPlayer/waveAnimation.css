@@ -1,0 +1,79 @@
+.box-container {
+  justify-content: space-between;
+  height: 54px;
+  --boxSize: 4px;
+  --gutter: 8px;
+  width: calc((var(--boxSize) + var(--gutter)) * 13);
+}
+
+.box {
+  transform: scale(0.4);
+  height: 100%;
+  width: var(--boxSize);
+  background: linear-gradient(40deg,#364562 20%, #C96850 100%) no-repeat;
+  border-radius: 18px;
+}
+
+.box.active {
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.box1 {
+  animation-name: quiet;
+}
+.box2 {
+  animation-name: normal;
+}
+.box3 {
+  animation-name: quiet;
+}
+.box4 {
+  animation-name: loud;
+}
+.box5 {
+  animation-name: quiet;
+}
+.box6 {
+  animation-name: normal;
+}
+.box7 {
+  animation-name: quiet;
+}
+
+@keyframes quiet {
+    25%{
+        transform: scale(.6)
+    }
+    50%{
+        transform: scale(.4)
+    }
+    75%{
+        transform: scale(.8)
+    }
+}
+
+@keyframes normal {
+    25%{
+        transform: scale(1)
+    }
+    50%{
+        transform: scale(.4)
+    }
+    75%{
+        transform: scale(.6)
+    }
+}
+
+@keyframes loud {
+    25%{
+        transform: scale(1))
+    }
+    50%{
+        transform: scale(.4)
+    }
+    75%{
+        transform: scale(1.2)
+    }
+}
