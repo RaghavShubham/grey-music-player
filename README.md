@@ -109,3 +109,7 @@ Bootstrapped with [Create React App](https://github.com/facebook/create-react-ap
 
 Issues and pull requests are welcome. If you are fixing something, a short note on
 how to reproduce it helps a lot.
+
+## License
+
+[MIT](LICENSE) — free to use, modify and distribute, including in your own forks.
